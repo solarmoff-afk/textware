@@ -1,0 +1,14 @@
+[package]
+name = "textware"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cosmic-text = "0.11"
+swash = "0.1"
+wgpu = "24.0"
+bytemuck = { version = "1.14", features = ["derive"] }
+log = "0.4"
+
+[target.'cfg(target_os = "android")'.dependencies]
+ndk = "0.8"
